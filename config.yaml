@@ -1,0 +1,64 @@
+# =====================================================================
+# x-auto-poster 設定ファイル
+# 機密情報(APIキー等)はここではなく .env / GitHub Secrets に入れてください。
+# =====================================================================
+
+# --- 投稿スケジュール(日本時間 JST, 24時間表記 "HH:MM") ---
+# ここに追加・削除・変更すれば、コードを触らずに投稿回数や時間を調整できます。
+posting_times_jst:
+  - "07:25"
+  - "11:55"
+  - "19:55"
+
+# --- コンテンツ設定 ---
+content:
+  genre: "副業(初心者向け)のノウハウ・気づき"
+  min_chars: 110
+  max_chars: 135
+  # スパムや誇大広告と誤認されやすい表現の例。Geminiへのプロンプトで
+  # 明示的に避けるよう指示します。運用しながら追加してください。
+  avoid_phrases:
+    - "絶対に稼げる"
+    - "誰でも簡単に稼げる"
+    - "今すぐ登録"
+    - "限定〇名"
+    - "元本保証"
+    - "必ず儲かる"
+
+# --- 自己分析(過去の投稿実績を次のコンテンツ生成に反映する) ---
+# Buffer の Post Metrics API から過去の投稿とインプレッション等を取得し、
+# 直近で反応が良かった投稿を「参考事例」としてGeminiに渡します。
+self_analysis:
+  lookback_days: 30
+  top_n_reference_posts: 5
+  # Buffer側のメトリクス反映は最大24時間ほど遅れることがあるため、
+  # 直近すぎる投稿は参考データが揃っていない可能性がある点に注意。
+
+# --- Gemini モデル設定(テキスト生成のみ) ---
+# 重要: Geminiのモデル名・無料枠は数か月単位で更新されます。
+# 実行前に必ず https://ai.google.dev/gemini-api/docs/pricing で
+# 「Free Tier」列が "Free of charge" になっているか確認し、必要ならここを書き換えてください。
+# 2026年8月確認時点: gemini-2.5-flash は無料枠あり。
+# 旧 gemini-2.0-flash は2026年6月1日付けで完全終了(shut down)しているため使用不可。
+gemini:
+  text_model: "gemini-3.5-flash"
+  text_generation_config:
+    temperature: 1.0
+    max_output_tokens: 400
+
+# --- 画像生成: Cloudflare Workers AI ---
+# 2026年8月確認時点、Geminiのネイティブ画像生成モデル(2.5/3.1 Flash Image, Imagen4等)は
+# 無料枠が "Not available"(無料枠なし)のため、画像生成だけ無料枠のある
+# Cloudflare Workers AI(1日10,000 neurons無料、画像1枚あたり目安50〜100 neurons)に変更。
+# モデル一覧: https://developers.cloudflare.com/workers-ai/models/
+cloudflare:
+  image_model: "@cf/black-forest-labs/flux-1-schnell"
+
+# --- 画像スタイル ---
+image:
+  style_prompt: >
+    Clean, minimal abstract 3D geometric illustration with soft lighting and pastel accent colors, modern tech style, professional, no text.
+
+# --- Cloudinary アップロード先フォルダ(整理用、任意) ---
+cloudinary:
+  folder: "x-auto-poster"
