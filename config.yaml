@@ -38,13 +38,14 @@ self_analysis:
 # 重要: Geminiのモデル名・無料枠は数か月単位で更新されます。
 # 実行前に必ず https://ai.google.dev/gemini-api/docs/pricing で
 # 「Free Tier」列が "Free of charge" になっているか確認し、必要ならここを書き換えてください。
-# 2026年8月確認時点: gemini-2.5-flash は無料枠あり。
+# 2026年8月確認時点: gemini-3.5-flash は無料枠あり。
+# gemini-2.5-flash は既存アカウント限定で、新規アカウントでは404になる場合があります。
 # 旧 gemini-2.0-flash は2026年6月1日付けで完全終了(shut down)しているため使用不可。
 gemini:
   text_model: "gemini-3.5-flash"
   text_generation_config:
     temperature: 1.0
-    max_output_tokens: 400
+    max_output_tokens: 1024
 
 # --- 画像生成: Cloudflare Workers AI ---
 # 2026年8月確認時点、Geminiのネイティブ画像生成モデル(2.5/3.1 Flash Image, Imagen4等)は
@@ -55,9 +56,11 @@ cloudflare:
   image_model: "@cf/black-forest-labs/flux-1-schnell"
 
 # --- 画像スタイル ---
+# 英語で書くことを推奨(画像生成モデルは英語プロンプトの理解精度が高いため)。
 image:
   style_prompt: >
-    Clean, minimal abstract 3D geometric illustration with soft lighting and pastel accent colors, modern tech style, professional, no text.
+    Clean, minimal abstract 3D geometric illustration with soft lighting and
+    pastel accent colors, modern tech style, professional, no text.
 
 # --- Cloudinary アップロード先フォルダ(整理用、任意) ---
 cloudinary:

@@ -1,0 +1,56 @@
+name: X 自動投稿(1日分をBufferへ予約)
+
+on:
+  schedule:
+    # 21:00 UTC = 06:00 JST(翌日)。config.yaml の posting_times_jst(07:25/11:55/19:55 JST)
+    # より前に実行し、その日ぶんの投稿をすべて Buffer 側へ「予約」する。
+    # 実際にXへ公開されるのは Buffer が各 dueAt 時刻を迎えたタイミング。
+    #
+    # 注意: GitHub Actions の cron はサーバー負荷により実行が数分〜十数分
+    # 遅れることがある(公式ドキュメントに明記された既知の仕様)。
+    # 本ワークフローはあくまで「その日の投稿を事前に予約する」役割なので、
+    # 数分の遅延が生じても実際の投稿時刻(dueAt)には影響しない。
+    - cron: "0 21 * * *"
+  workflow_dispatch: {}  # 手動実行用(Actionsタブから実行可能)
+
+jobs:
+  schedule-posts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: リポジトリを取得
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: 依存関係インストール
+        run: pip install -r requirements.txt
+
+      - name: パイプライン実行
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_ORGANIZATION_ID: ${{ secrets.BUFFER_ORGANIZATION_ID }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+        run: python -m src.main
+
+      # 成功・失敗を問わず、ログと(発生していれば)エラー詳細を
+      # Actionsの実行結果画面からダウンロードできるようにしておく。
+      - name: ログをアップロード
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-logs-${{ github.run_id }}
+          path: |
+            logs/
+            errors/
+          if-no-files-found: ignore
+          retention-days: 14
