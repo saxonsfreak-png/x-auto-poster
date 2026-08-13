@@ -1,215 +1,186 @@
-2026-08-09 15:15:00 [ERROR] [起動] 設定エラー: 以下の環境変数が設定されていません: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN
+2026-08-12 10:44:17 [ERROR] [起動] 設定エラー: 以下の環境変数が設定されていません: GEMINI_API_KEY, BUFFER_API_KEY, BUFFER_ORGANIZATION_ID, BUFFER_CHANNEL_ID, CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN
 .env ファイル(ローカル)または GitHub Secrets(Actions)を確認してください。詳しくは README.md の「セットアップ」を参照してください。
-2026-08-09 15:18:24 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-09 15:18:24 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-09 15:18:24 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-09 15:18:24 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:18:25 [ERROR] [0725/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:18:25 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:18:25 [ERROR] [1155/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:18:25 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:18:25 [ERROR] [1955/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:18:25 [INFO] [サマリー] 成功: []
-2026-08-09 15:18:25 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-09 15:31:27 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-09 15:31:27 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-09 15:31:27 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-09 15:31:27 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:31:27 [ERROR] [0725/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash-exp): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:31:28 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:31:28 [ERROR] [1155/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash-exp): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:31:28 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:31:28 [ERROR] [1955/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash-exp): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:31:28 [INFO] [サマリー] 成功: []
-2026-08-09 15:31:28 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-09 15:32:04 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-09 15:32:04 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-09 15:32:04 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-09 15:32:04 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:32:04 [ERROR] [0725/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-1.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:32:04 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:32:04 [ERROR] [1155/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-1.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:32:04 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 15:32:04 [ERROR] [1955/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-1.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-08-09 15:32:04 [INFO] [サマリー] 成功: []
-2026-08-09 15:32:04 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-09 16:01:17 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-09 16:01:17 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-09 16:01:18 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-09 16:01:18 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 16:01:18 [ERROR] [0725/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-09 16:01:18 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 16:01:19 [ERROR] [1155/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-09 16:01:19 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 16:01:19 [ERROR] [1955/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-09 16:01:19 [INFO] [サマリー] 成功: []
-2026-08-09 16:01:19 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-09 16:02:00 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-09 16:02:00 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-09 16:02:00 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-09 16:02:00 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 16:02:01 [ERROR] [0725/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 59.031999072s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}
-2026-08-09 16:02:01 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 16:02:01 [ERROR] [1155/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 58.856473076s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}
-2026-08-09 16:02:01 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-09 16:02:01 [ERROR] [1955/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 58.69760313s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}
-2026-08-09 16:02:01 [INFO] [サマリー] 成功: []
-2026-08-09 16:02:01 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-10 19:40:43 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-10 19:40:43 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-10 19:40:43 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-10 19:40:43 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:40:43 [ERROR] [0725/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 16.77642729s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}
-2026-08-10 19:40:43 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:40:43 [ERROR] [1155/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 16.583296758s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}
-2026-08-10 19:40:43 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:40:44 [ERROR] [1955/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.0-flash): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 16.401390769s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}
-2026-08-10 19:40:44 [INFO] [サマリー] 成功: []
-2026-08-10 19:40:44 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-10 19:43:30 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-10 19:43:30 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-10 19:43:31 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-10 19:43:31 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:43:31 [ERROR] [0725/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-10 19:43:31 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:43:31 [ERROR] [1155/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-10 19:43:31 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:43:32 [ERROR] [1955/テキスト生成] 失敗: テキスト生成でエラーが発生しました(model=gemini-2.5-flash): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
-2026-08-10 19:43:32 [INFO] [サマリー] 成功: []
-2026-08-10 19:43:32 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-10 19:45:23 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-10 19:45:23 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-10 19:45:24 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-10 19:45:24 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:45:26 [INFO] [0725/テキスト生成] 生成成功(25文字): の前に（15文字）
-    *   アイデア5：副...
-2026-08-10 19:45:26 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:45:27 [ERROR] [0725/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=404, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":7003,"message":"Could not route to /client/v4/accounts/cfut_XpiwLpwSKB63kMBuNOaezk7Br7LbXWM21IH2FYOF6522d429/ai/run/@cf/black-forest-labs/flux-1-schnell, perhaps your object identifier is invalid?"}],"messages":[]}
-2026-08-10 19:45:27 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:45:29 [INFO] [1155/テキスト生成] 生成成功(23文字): スキルは後回しでいい。」（20文字）
-「スキル...
-2026-08-10 19:45:29 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:45:29 [ERROR] [1155/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=404, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":7003,"message":"Could not route to /client/v4/accounts/cfut_XpiwLpwSKB63kMBuNOaezk7Br7LbXWM21IH2FYOF6522d429/ai/run/@cf/black-forest-labs/flux-1-schnell, perhaps your object identifier is invalid?"}],"messages":[]}
-2026-08-10 19:45:29 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:45:31 [INFO] [1955/テキスト生成] 生成成功(19文字): 長いか)
-   - 「副業の初月は1秒...
-2026-08-10 19:45:31 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:45:31 [ERROR] [1955/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=404, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":7003,"message":"Could not route to /client/v4/accounts/cfut_XpiwLpwSKB63kMBuNOaezk7Br7LbXWM21IH2FYOF6522d429/ai/run/@cf/black-forest-labs/flux-1-schnell, perhaps your object identifier is invalid?"}],"messages":[]}
-2026-08-10 19:45:31 [INFO] [サマリー] 成功: []
-2026-08-10 19:45:31 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-10 19:53:52 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-10 19:53:52 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-10 19:53:52 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-10 19:53:52 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:53:55 [INFO] [0725/テキスト生成] 生成成功(27文字): 圧倒的に早かったです。
+2026-08-12 10:45:28 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
+2026-08-12 10:45:28 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
+2026-08-12 10:45:28 [INFO] [自己分析] 過去投稿3件のうち、上位3件を参考データとして使用します
+2026-08-12 10:45:28 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 10:45:44 [INFO] [0725/テキスト生成] 生成成功(147文字): 時給2千円を狙うなら、
+「自分の時間」ではなく
+「他人の手間」を買う仕事が
+近道...
+2026-08-12 10:45:44 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 10:45:46 [INFO] [0725/画像生成] 生成成功(396783 bytes)
+2026-08-12 10:45:48 [INFO] [0725/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786499148/x-auto-poster/x-auto-poster/7cfcfd6896434016a76eaf4a1dd94617.jpg
+2026-08-12 10:45:48 [INFO] [0725/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-12T22:25:00.000Z
+2026-08-12 10:45:48 [INFO] [0725/投稿予約] [dry-run] 投稿文: 時給2千円を狙うなら、
+「自分の時間」ではなく
+「他人の手間」を買う仕事が
+近道です。
 
-あなたなら、何を手伝ってあげ...
-2026-08-10 19:53:55 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:53:55 [ERROR] [0725/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=404, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":7003,"message":"Could not route to /client/v4/accounts/XpiwLpwSKB63kMBuNOaezk7Br7LbXWM21IH2FYOF6522d429/ai/run/@cf/black-forest-labs/flux-1-schnell, perhaps your object identifier is invalid?"}],"messages":[]}
-2026-08-10 19:53:55 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:53:57 [INFO] [1155/テキスト生成] 生成成功(22文字): ）
+例えば、忙しい個人店主に代わり
+スマホでSNSの下書きを5件
+作るだけで感謝されます。
 
-   「月3千円稼ぐなら、勉強は不要」...
-2026-08-10 19:53:57 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:53:57 [ERROR] [1155/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=404, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":7003,"message":"Could not route to /client/v4/accounts/XpiwLpwSKB63kMBuNOaezk7Br7LbXWM21IH2FYOF6522d429/ai/run/@cf/black-forest-labs/flux-1-schnell, perhaps your object identifier is invalid?"}],"messages":[]}
-2026-08-10 19:53:57 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:54:00 [INFO] [1955/テキスト生成] 生成成功(25文字): 「未経験から30日で5千円作った、」で行ってみよう...
-2026-08-10 19:54:00 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:54:00 [ERROR] [1955/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=404, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":7003,"message":"Could not route to /client/v4/accounts/XpiwLpwSKB63kMBuNOaezk7Br7LbXWM21IH2FYOF6522d429/ai/run/@cf/black-forest-labs/flux-1-schnell, perhaps your object identifier is invalid?"}],"messages":[]}
-2026-08-10 19:54:00 [INFO] [サマリー] 成功: []
-2026-08-10 19:54:00 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-10 19:56:08 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-10 19:56:08 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-10 19:56:09 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-10 19:56:09 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:56:11 [INFO] [0725/テキスト生成] 生成成功(25文字): は1枚の写真から。」（15文字）
+特別なスキルがなくても、
+誰かの「面倒」に気づければ
+立派な仕事になりますよね。 
 
-「最初の副収入...
-2026-08-10 19:56:11 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:56:11 [ERROR] [0725/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=401, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":10000,"message":"Authentication error"}],"messages":[]}
-2026-08-10 19:56:11 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:56:14 [INFO] [1155/テキスト生成] 生成成功(22文字): （15文字）をベースにしよう。いや、もう少し...
-2026-08-10 19:56:14 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:56:14 [ERROR] [1155/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=401, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":10000,"message":"Authentication error"}],"messages":[]}
-2026-08-10 19:56:14 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:56:16 [INFO] [1955/テキスト生成] 生成成功(21文字): スマホのメモ帳だけで月1万（14文字）
-「...
-2026-08-10 19:56:16 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:56:16 [ERROR] [1955/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=401, model=@cf/black-forest-labs/flux-1-schnell): {"result":null,"success":false,"errors":[{"code":10000,"message":"Authentication error"}],"messages":[]}
-2026-08-10 19:56:16 [INFO] [サマリー] 成功: []
-2026-08-10 19:56:16 [ERROR] [サマリー] 失敗: ['07:25', '11:55', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-10 19:59:32 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-10 19:59:32 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-10 19:59:32 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-10 19:59:32 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:59:35 [INFO] [0725/テキスト生成] 生成成功(22文字): 1記事で3千円。」（13文字）
+あなたなら何を手伝いますか？
+2026-08-12 10:45:48 [INFO] [0725/投稿予約] [dry-run] 画像テーマ(英語): A close-up of a warm glowing smartphone screen reflecting on a wooden table, next to a steaming ceramic coffee mug in a cozy, dimly lit room with soft ambient light.
+2026-08-12 10:45:48 [INFO] [0725/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786499148/x-auto-poster/x-auto-poster/7cfcfd6896434016a76eaf4a1dd94617.jpg
+2026-08-12 10:45:48 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 10:45:53 [INFO] [1155/テキスト生成] 生成成功(155文字): 未経験から月に1万円稼ぐなら、
+ブログではなく「画像作成」が
+実は一番早いです。...
+2026-08-12 10:45:53 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 10:45:55 [INFO] [1155/画像生成] 生成成功(440055 bytes)
+2026-08-12 10:45:55 [INFO] [1155/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786499155/x-auto-poster/x-auto-poster/28e0add8b592424ebcf00ea6b1815cfa.jpg
+2026-08-12 10:45:55 [INFO] [1155/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-12T02:55:00.000Z
+2026-08-12 10:45:55 [INFO] [1155/投稿予約] [dry-run] 投稿文: 未経験から月に1万円稼ぐなら、
+ブログではなく「画像作成」が
+実は一番早いです。
 
-   「え...
-2026-08-10 19:59:35 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:59:36 [ERROR] [0725/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=400, model=@cf/black-forest-labs/flux-1-schnell): {"errors":[{"message":"AiError: AiError: Input prompt contains NSFW content. (836a6d71-0d34-4ea1-8369-d66ffd694ece)","code":3030}],"success":false,"result":{},"messages":[]}
-2026-08-10 19:59:36 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:59:39 [INFO] [1155/テキスト生成] 生成成功(23文字): 最初の1歩は、1行の日記でした。」（18文字）...
-2026-08-10 19:59:39 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:59:41 [INFO] [1155/画像生成] 生成成功(534122 bytes)
-2026-08-10 19:59:43 [INFO] [1155/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359582/x-auto-poster/x-auto-poster/ff167cd9be9e4a608caf8a4906a18c4f.jpg
-2026-08-10 19:59:43 [INFO] [1155/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-11T02:55:00.000Z
-2026-08-10 19:59:43 [INFO] [1155/投稿予約] [dry-run] 投稿文: 最初の1歩は、1行の日記でした。」（18文字）
-2026-08-10 19:59:43 [INFO] [1155/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359582/x-auto-poster/x-auto-poster/ff167cd9be9e4a608caf8a4906a18c4f.jpg
-2026-08-10 19:59:43 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 19:59:46 [INFO] [1955/テキスト生成] 生成成功(24文字): 意外とすぐ」（18文字）
-   - 「最初の5千...
-2026-08-10 19:59:46 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 19:59:47 [ERROR] [1955/画像生成] 失敗: Cloudflare Workers AIがエラーを返しました(status=400, model=@cf/black-forest-labs/flux-1-schnell): {"errors":[{"message":"AiError: AiError: Input prompt contains NSFW content. (9e7e6f2a-e9f1-435a-b994-98f2918840c9)","code":3030}],"success":false,"result":{},"messages":[]}
-2026-08-10 19:59:47 [INFO] [サマリー] 成功: ['11:55']
-2026-08-10 19:59:47 [ERROR] [サマリー] 失敗: ['07:25', '19:55'](詳細は errors/ ディレクトリを確認してください)
-2026-08-10 20:01:31 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-10 20:01:31 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
-2026-08-10 20:01:31 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-10 20:01:31 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 20:01:34 [INFO] [0725/テキスト生成] 生成成功(21文字): 0円で始めた、ブログの裏ワザ」（18文字）...
-2026-08-10 20:01:34 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 20:01:36 [INFO] [0725/画像生成] 生成成功(204042 bytes)
-2026-08-10 20:01:38 [INFO] [0725/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359697/x-auto-poster/x-auto-poster/3856e1353f5042a6aa01a67e1a894f3a.jpg
-2026-08-10 20:01:38 [INFO] [0725/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-10T22:25:00.000Z
-2026-08-10 20:01:38 [INFO] [0725/投稿予約] [dry-run] 投稿文: 0円で始めた、ブログの裏ワザ」（18文字）
-2026-08-10 20:01:38 [INFO] [0725/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359697/x-auto-poster/x-auto-poster/3856e1353f5042a6aa01a67e1a894f3a.jpg
-2026-08-10 20:01:38 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 20:01:40 [INFO] [1155/テキスト生成] 生成成功(16文字): 15だが許容範囲？「スキル0から...
-2026-08-10 20:01:40 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 20:01:42 [INFO] [1155/画像生成] 生成成功(116343 bytes)
-2026-08-10 20:01:44 [INFO] [1155/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359702/x-auto-poster/x-auto-poster/cc441840af904e9081db69a1b413818c.jpg
-2026-08-10 20:01:44 [INFO] [1155/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-11T02:55:00.000Z
-2026-08-10 20:01:44 [INFO] [1155/投稿予約] [dry-run] 投稿文: 15だが許容範囲？「スキル0から
-2026-08-10 20:01:44 [INFO] [1155/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359702/x-auto-poster/x-auto-poster/cc441840af904e9081db69a1b413818c.jpg
-2026-08-10 20:01:44 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 20:01:46 [INFO] [1955/テキスト生成] 生成成功(18文字): プロフィールの「初心者」を消すだけ。...
-2026-08-10 20:01:46 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 20:01:48 [INFO] [1955/画像生成] 生成成功(228726 bytes)
-2026-08-10 20:01:49 [INFO] [1955/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359708/x-auto-poster/x-auto-poster/c6cfefd21ce047ab8d152164c274edad.jpg
-2026-08-10 20:01:49 [INFO] [1955/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-11T10:55:00.000Z
-2026-08-10 20:01:49 [INFO] [1955/投稿予約] [dry-run] 投稿文: プロフィールの「初心者」を消すだけ。
-2026-08-10 20:01:49 [INFO] [1955/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359708/x-auto-poster/x-auto-poster/c6cfefd21ce047ab8d152164c274edad.jpg
-2026-08-10 20:01:49 [INFO] [サマリー] 成功: ['07:25', '11:55', '19:55']
-2026-08-10 20:02:10 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
-2026-08-10 20:02:10 [INFO] [自己分析] 過去投稿0件のうち、上位0件を参考データとして使用します
-2026-08-10 20:02:10 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 20:02:13 [INFO] [0725/テキスト生成] 生成成功(25文字): 最初の1万円は、家にある本を売るだけ。
-これでどう...
-2026-08-10 20:02:13 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 20:02:15 [INFO] [0725/画像生成] 生成成功(194997 bytes)
-2026-08-10 20:02:17 [INFO] [0725/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359735/x-auto-poster/x-auto-poster/98667e10b9c3498cbeb82a8bc17b8e77.jpg
-2026-08-10 20:02:18 [INFO] [0725/投稿予約] 成功: due_at(UTC)=2026-08-10T22:25:00.000Z
-2026-08-10 20:02:18 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 20:02:20 [INFO] [1155/テキスト生成] 生成成功(20文字): (14文字)
-   - 実は「資格の勉強...
-2026-08-10 20:02:20 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 20:02:23 [INFO] [1155/画像生成] 生成成功(207343 bytes)
-2026-08-10 20:02:24 [INFO] [1155/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359743/x-auto-poster/x-auto-poster/45a86d8c2a214814a47f7de088413c6b.jpg
-2026-08-10 20:02:24 [INFO] [1155/投稿予約] 成功: due_at(UTC)=2026-08-11T02:55:00.000Z
-2026-08-10 20:02:24 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト
-2026-08-10 20:02:27 [INFO] [1955/テキスト生成] 生成成功(19文字): - 「スキルなしの副業は、コピペから」...
-2026-08-10 20:02:27 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
-2026-08-10 20:02:29 [INFO] [1955/画像生成] 生成成功(287556 bytes)
-2026-08-10 20:02:30 [INFO] [1955/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786359749/x-auto-poster/x-auto-poster/8d1a302585db44f793ee840b1ca5309a.jpg
-2026-08-10 20:02:30 [INFO] [1955/投稿予約] 成功: due_at(UTC)=2026-08-11T10:55:00.000Z
-2026-08-10 20:02:30 [INFO] [サマリー] 成功: ['07:25', '11:55', '19:55']
+無料ツールを使い、SNS向けの
+バナーを3枚作るだけでクリア。
+
+「デザインセンスがない」と
+諦めるのはもったいない。
+型通りに文字を並べるだけで
+喜ばれる案件はたくさんあります。
+
+まずは自分のアイコン、
+作ってみませんか？
+2026-08-12 10:45:55 [INFO] [1155/投稿予約] [dry-run] 画像テーマ(英語): a minimalist desk setup with a computer screen showing clean colorful geometric patterns, a wireless mouse and a steaming mug, cozy coffee cup nearby, soft warm lighting
+2026-08-12 10:45:55 [INFO] [1155/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786499155/x-auto-poster/x-auto-poster/28e0add8b592424ebcf00ea6b1815cfa.jpg
+2026-08-12 10:45:55 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 10:46:43 [WARNING] [1955/テキスト生成] 試行1/2 失敗: テキスト生成でエラーが発生しました(model=gemini-3.5-flash): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-08-12 10:46:43 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行2/2)
+2026-08-12 10:46:49 [INFO] [1955/テキスト生成] 生成成功(146文字): スマホの「写真フォルダ」が、
+実は最初の軍資金になります。
+
+旅行やカフェで何気...
+2026-08-12 10:46:49 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 10:46:51 [INFO] [1955/画像生成] 生成成功(367725 bytes)
+2026-08-12 10:46:51 [INFO] [1955/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786499211/x-auto-poster/x-auto-poster/bf980352c63548888c6802a862ebfddf.jpg
+2026-08-12 10:46:51 [INFO] [1955/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-12T10:55:00.000Z
+2026-08-12 10:46:51 [INFO] [1955/投稿予約] [dry-run] 投稿文: スマホの「写真フォルダ」が、
+実は最初の軍資金になります。
+
+旅行やカフェで何気なく撮った
+風景写真を、写真販売サイトに
+10枚登録してみるだけ。
+
+センス抜群の1枚より、日常の
+「普通の写真」がブログの背景
+などで意外と重宝されます。
+
+あなたのスマホにも、
+眠っているお宝はありませんか？
+2026-08-12 10:46:51 [INFO] [1955/投稿予約] [dry-run] 画像テーマ(英語): a hand holding a modern smartphone displaying a colorful gallery of scenic and everyday photos, glowing screen, soft and clean wooden background
+2026-08-12 10:46:51 [INFO] [1955/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786499211/x-auto-poster/x-auto-poster/bf980352c63548888c6802a862ebfddf.jpg
+2026-08-12 10:46:51 [INFO] [サマリー] 成功: ['07:25', '11:55', '19:55']
+2026-08-12 12:21:40 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
+2026-08-12 12:21:41 [INFO] [自己分析] 過去投稿3件のうち、上位3件を参考データとして使用します
+2026-08-12 12:21:41 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 12:21:43 [INFO] [0725/テキスト生成] 生成成功(122文字): 「月5千円」はブログより、不用品販売が早い。
+
+私も最初は本や服をメルカリに出す...
+2026-08-12 12:21:43 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 12:21:45 [INFO] [0725/画像生成] 生成成功(454386 bytes)
+2026-08-12 12:21:47 [INFO] [0725/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786504906/x-auto-poster/x-auto-poster/94a83c9cab1c49c0b7bb6650d68c5386.jpg
+2026-08-12 12:21:47 [INFO] [0725/投稿予約] 成功: due_at(UTC)=2026-08-12T22:25:00.000Z
+2026-08-12 12:21:47 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 12:21:49 [INFO] [1155/テキスト生成] 生成成功(125文字): パソコン不要、スマホ1台で完結。
+
+実はアンケートモニターの隙間時間だけで、先月...
+2026-08-12 12:21:49 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 12:21:51 [INFO] [1155/画像生成] 生成成功(458298 bytes)
+2026-08-12 12:21:52 [INFO] [1155/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786504911/x-auto-poster/x-auto-poster/002f73f309744397a2072850b76bb0ba.jpg
+2026-08-12 12:21:53 [INFO] [1155/投稿予約] 成功: due_at(UTC)=2026-08-13T02:55:00.000Z
+2026-08-12 12:21:53 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 12:21:54 [INFO] [1955/テキスト生成] 生成成功(136文字): 時給0円のブログを書くより、
+「オンラインの文字起こし」が
+初心者の近道でした。...
+2026-08-12 12:21:54 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 12:21:56 [INFO] [1955/画像生成] 生成成功(509301 bytes)
+2026-08-12 12:21:57 [INFO] [1955/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786504917/x-auto-poster/x-auto-poster/9b6b1b26603a4d35ba934ecc31b4d660.jpg
+2026-08-12 12:21:58 [INFO] [1955/投稿予約] 成功: due_at(UTC)=2026-08-12T10:55:00.000Z
+2026-08-12 12:21:58 [INFO] [サマリー] 成功: ['07:25', '11:55', '19:55']
+2026-08-12 12:53:55 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
+2026-08-12 12:53:56 [INFO] [自己分析] 過去投稿3件のうち、上位3件を参考データとして使用します
+2026-08-12 12:53:56 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 12:53:57 [INFO] [0725/テキスト生成] 生成成功(126文字): スマホのメモ帳だけで、月3万円。
+
+特別なスキルがなくても、日々の「これ不便だな...
+2026-08-12 12:53:57 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 12:54:00 [INFO] [0725/画像生成] 生成成功(302851 bytes)
+2026-08-12 12:54:02 [INFO] [0725/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786506841/x-auto-poster/x-auto-poster/529c5902b1304f528cada0c25644abec.jpg
+2026-08-12 12:54:02 [INFO] [0725/投稿予約] 成功: due_at(UTC)=2026-08-12T22:25:00.000Z
+2026-08-12 12:54:02 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 12:54:04 [INFO] [1155/テキスト生成] 生成成功(135文字): 不用品の写真を3方向から撮るだけ。
+
+メルカリで売れないと悩む人は、実は「写真の...
+2026-08-12 12:54:04 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 12:54:06 [INFO] [1155/画像生成] 生成成功(397649 bytes)
+2026-08-12 12:54:07 [INFO] [1155/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786506847/x-auto-poster/x-auto-poster/86bb67b81e74475097f4b1d8b1accad1.jpg
+2026-08-12 12:54:08 [INFO] [1155/投稿予約] 成功: due_at(UTC)=2026-08-13T02:55:00.000Z
+2026-08-12 12:54:08 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/2)
+2026-08-12 12:54:10 [INFO] [1955/テキスト生成] 生成成功(131文字): 平日の夜30分、音声入力で話すだけ。
+
+タイピングが苦手でも、スマホの音声認識を...
+2026-08-12 12:54:10 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-12 12:54:11 [INFO] [1955/画像生成] 生成成功(387442 bytes)
+2026-08-12 12:54:12 [INFO] [1955/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786506851/x-auto-poster/x-auto-poster/b2d3ae1d4b074f16af21c9911187c814.jpg
+2026-08-12 12:54:13 [INFO] [1955/投稿予約] 成功: due_at(UTC)=2026-08-12T10:55:00.000Z
+2026-08-12 12:54:13 [INFO] [サマリー] 成功: ['07:25', '11:55', '19:55']
+2026-08-13 16:33:27 [INFO] [起動] 設定読み込み完了。投稿予定時刻(JST): ['07:25', '11:55', '19:55']
+2026-08-13 16:33:27 [INFO] [起動] dry-run モードで実行します(Bufferへの投稿予約は行いません)
+2026-08-13 16:33:28 [INFO] [自己分析] 過去投稿6件のうち、上位5件を参考データとして使用します
+2026-08-13 16:33:28 [INFO] [0725/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/3)
+2026-08-13 16:33:30 [INFO] [0725/テキスト生成] 生成成功(127文字): スマホの連絡先を整理するだけ。
+
+これだけで、副業に使える時間が毎週2時間も増え...
+2026-08-13 16:33:30 [INFO] [0725/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-13 16:33:32 [INFO] [0725/画像生成] 生成成功(628276 bytes)
+2026-08-13 16:33:34 [INFO] [0725/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786606413/x-auto-poster/x-auto-poster/9365c7ed1bbd466a8e70aee1f47cb0d8.jpg
+2026-08-13 16:33:34 [INFO] [0725/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-13T22:25:00.000Z
+2026-08-13 16:33:34 [INFO] [0725/投稿予約] [dry-run] 投稿文: スマホの連絡先を整理するだけ。
+
+これだけで、副業に使える時間が毎週2時間も増えました。ダラダラ続くグループトークや、付き合いの飲み会を1つ断るだけで心に余裕が生まれます。まずは時間作りが最初の1歩ですね。みなさんは今週、自分の時間を何分作れそうですか？
+2026-08-13 16:33:34 [INFO] [0725/投稿予約] [dry-run] 画像テーマ(英語): A close-up of a warm wooden desk with a black smartphone showing a contact list screen, a green potted succulent, and a white coffee cup, soft morning sunshine
+2026-08-13 16:33:34 [INFO] [0725/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786606413/x-auto-poster/x-auto-poster/9365c7ed1bbd466a8e70aee1f47cb0d8.jpg
+2026-08-13 16:33:34 [INFO] [1155/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/3)
+2026-08-13 16:33:36 [INFO] [1155/テキスト生成] 生成成功(142文字): 週1回の「お礼DM」だけで、
+継続案件が2件も増えました。
+
+納品して終わりでは...
+2026-08-13 16:33:36 [INFO] [1155/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-13 16:33:37 [INFO] [1155/画像生成] 生成成功(387684 bytes)
+2026-08-13 16:33:38 [INFO] [1155/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786606417/x-auto-poster/x-auto-poster/a0635347f5454b6387aee260feca1f88.jpg
+2026-08-13 16:33:38 [INFO] [1155/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-14T02:55:00.000Z
+2026-08-13 16:33:38 [INFO] [1155/投稿予約] [dry-run] 投稿文: 週1回の「お礼DM」だけで、
+継続案件が2件も増えました。
+
+納品して終わりではなく、「先週の企画、反響はどうでしたか？」と一言送っただけ。クライアントが求めているのは、納品物以上に「並走してくれる安心感」なのかもしれません。
+
+皆さんは納品した後の相手と、どんな会話をしていますか？
+2026-08-13 16:33:38 [INFO] [1155/投稿予約] [dry-run] 画像テーマ(英語): A smartphone resting next to a white ceramic coffee mug on a clean wooden desk, with soft sunlight filtering through a plant shadows in the background
+2026-08-13 16:33:38 [INFO] [1155/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786606417/x-auto-poster/x-auto-poster/a0635347f5454b6387aee260feca1f88.jpg
+2026-08-13 16:33:38 [INFO] [1955/テキスト生成] Geminiへ投稿文の生成をリクエスト(試行1/3)
+2026-08-13 16:33:41 [INFO] [1955/テキスト生成] 生成成功(188文字): 「単価アップ」の交渉を、
+自分から一度もしないまま終わっていませんか？
+
+実は、...
+2026-08-13 16:33:41 [INFO] [1955/画像生成] Cloudflare Workers AIへ画像の生成をリクエスト
+2026-08-13 16:33:43 [INFO] [1955/画像生成] 生成成功(378914 bytes)
+2026-08-13 16:33:44 [INFO] [1955/画像アップロード] 成功: https://res.cloudinary.com/ryn7kznf/image/upload/v1786606423/x-auto-poster/x-auto-poster/f0130d6e7b0f4e7387ecaaaadcd8c2d8.jpg
+2026-08-13 16:33:44 [INFO] [1955/投稿予約] [dry-run] 実際の予約はスキップします。 due_at(UTC)=2026-08-13T10:55:00.000Z
+2026-08-13 16:33:44 [INFO] [1955/投稿予約] [dry-run] 投稿文: 「単価アップ」の交渉を、
+自分から一度もしないまま終わっていませんか？
+
+実は、納品件数が10件を超えたタイミングで「いつもありがとうございます。次回から1本あたり500円プラスでいかがでしょうか」と、丁寧に相談しただけ。あっさりOKをいただけて、毎月の収入が5,000円増えました。相手の信頼が貯まった時期を狙うのがコツです。
+
+皆さんは、単価の相談をしたことがありますか？
+2026-08-13 16:33:44 [INFO] [1955/投稿予約] [dry-run] 画像テーマ(英語): a warm and inviting study desk with a classic analog calendar showing marked dates, a sleek fountain pen, and a ceramic mug with a hint of steam rising
+2026-08-13 16:33:44 [INFO] [1955/投稿予約] [dry-run] 画像URL: https://res.cloudinary.com/ryn7kznf/image/upload/v1786606423/x-auto-poster/x-auto-poster/f0130d6e7b0f4e7387ecaaaadcd8c2d8.jpg
+2026-08-13 16:33:44 [INFO] [サマリー] 成功: ['07:25', '11:55', '19:55']

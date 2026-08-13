@@ -28,12 +28,12 @@ class CloudflareImageClient:
         self._model = model
         self._log = logger
 
-    def generate_image(self, prompt: str) -> bytes:
+    def generate_image(self, prompt: str, steps: int = 4) -> bytes:
         try:
             resp = requests.post(
                 self._url,
                 headers=self._headers,
-                json={"prompt": prompt},
+                json={"prompt": prompt, "steps": steps},
                 timeout=60,
             )
         except requests.RequestException as e:

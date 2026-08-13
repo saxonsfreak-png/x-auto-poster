@@ -56,11 +56,18 @@ cloudflare:
   image_model: "@cf/black-forest-labs/flux-1-schnell"
 
 # --- 画像スタイル ---
-# 英語で書くことを推奨(画像生成モデルは英語プロンプトの理解精度が高いため)。
+# 注意: 「結晶/宝石/多面体」のような抽象的でカクカクした幾何形状は避けてください。
+# 実際の不具合(文字化けした模様が画像に出る)が、すべてこの手のカクカクした形状で
+# 発生していたため。具体的なモノ(ノート、植物、デスク周りの小物など)を中心にした
+# 3Dレンダー/プロダクト写真風のスタイルの方が安定しています。
+# また "no text" 等の禁止語もここには書かないでください
+# (flux-1-schnellはnegative_promptに非対応で、"text"という単語を含めると
+#  かえって文字らしき模様を描画してしまう挙動が確認されています)。
 image:
   style_prompt: >
-    Clean, minimal abstract 3D geometric illustration with soft lighting and
-    pastel accent colors, modern tech style, professional, no text.
+    Clean 3D render of everyday objects, soft studio lighting, pastel accent
+    colors, shallow depth of field, modern product photography style,
+    professional and minimal.
 
 # --- Cloudinary アップロード先フォルダ(整理用、任意) ---
 cloudinary:
