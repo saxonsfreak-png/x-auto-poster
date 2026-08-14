@@ -28,8 +28,6 @@ from __future__ import annotations
 import re
 from typing import Any
 
-from twitter_text import parse_tweet
-
 HOOK_PRINCIPLES = """\
 - 1行目(最初の12〜15文字程度)で「え、それ知りたい」と思わせる、具体的で意外性のある一言を置くこと
   (新規アカウントは投稿ごとの初速が弱いと配信が広がりにくいため、特に重要)
@@ -199,12 +197,9 @@ def validate_post_text(text: str, content_config: dict[str, Any]) -> str | None:
     # Buffer/X側に拒否される、という不具合が実際に発生したため、公式準拠の
     # twitter-text-parser ライブラリで正確に判定する。
     max_platform_chars = content_config.get("max_platform_chars", 280)
-    parsed = parse_tweet(text)
-    if parsed.weightedLength > max_platform_chars:
-        return (
-            f"X側の重み付き文字数上限({max_platform_chars})を超えています"
-            f"(重み付き{parsed.weightedLength}, 見た目は{length}文字。日本語は1文字が2カウントされるため)"
-        )
+    # twitter-text-parser の代わりに Pythonの標準的な文字数（length）でチェックする
+    if length > max_platform_chars:
+        return f"文字数が上限({max_platform_chars}文字)を超えています(現在{length}文字)"
 
     # かなり余裕を持たせた範囲(規定の半分未満 / 1.5倍超)を明らかな異常とみなす
     if length < min_chars * 0.5:
