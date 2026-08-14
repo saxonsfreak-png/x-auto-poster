@@ -1,6 +1,5 @@
 # --- コンテンツ生成 ---
 google-genai>=0.3.0        # Gemini API 統合SDK（テキスト・画像生成）
-twitter-text-parser>=3.0.0 # X(Twitter)の重み付き文字数カウント(日本語は1文字=2カウント)の公式互換実装
 
 # --- 画像ホスティング(Buffer に渡す公開URLを作るため) ---
 cloudinary>=1.41.0
