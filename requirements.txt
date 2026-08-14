@@ -8,5 +8,6 @@ cloudinary>=1.41.0
 # --- Buffer API 呼び出し・共通 ---
 requests>=2.31.0
 PyYAML>=6.0.1
-python-dotenv>=1.0.1       # ローカル実行時に .env を読み込むため（GitHub Actions では Secrets を使用）
-setuptools
+python-dotenv>=1.0.1  # ローカル実行時に .env を読み込むため (GitHub Actions では Secrets を使用)
+setuptools>=70.0.0
+wheel
