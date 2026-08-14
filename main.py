@@ -110,14 +110,15 @@ def process_slot(
     という指示として使う(1回の実行で3件が似た内容になるのを防ぐため)。
     """
 
-    # --- テキスト生成(検証NGなら1回だけ再試行) ---
+    # --- テキスト生成(検証NGなら最大2回まで再試行) ---
     log = PhaseAdapter(base_logger, f"{slot_label}/テキスト生成")
     post_text = None
     content = None
     last_error = None
-    for attempt in (1, 2):
+    max_attempts = 3
+    for attempt in range(1, max_attempts + 1):
         try:
-            log.info(f"Geminiへ投稿文の生成をリクエスト(試行{attempt}/2)")
+            log.info(f"Geminiへ投稿文の生成をリクエスト(試行{attempt}/{max_attempts})")
             text_prompt = build_text_prompt(config.content, reference_posts, already_used_texts)
             gen_cfg = config.gemini.get("text_generation_config", {})
             content = gemini_client.generate_post_content(
@@ -132,10 +133,10 @@ def process_slot(
             break
         except GeminiError as e:
             last_error = e
-            log.warning(f"試行{attempt}/2 失敗: {e}")
+            log.warning(f"試行{attempt}/{max_attempts} 失敗: {e}")
 
     if post_text is None:
-        log.error(f"2回試行しましたが失敗しました: {last_error}")
+        log.error(f"{max_attempts}回試行しましたが失敗しました: {last_error}")
         save_error_detail(slot_label, "text_generation", last_error)
         return False
 

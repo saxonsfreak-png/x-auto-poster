@@ -15,6 +15,9 @@ content:
   genre: "副業(初心者向け)のノウハウ・気づき"
   min_chars: 110
   max_chars: 135
+  # X側の投稿文字数上限。通常アカウントは280文字。Premium等で条件が違う場合はここを変更。
+  # min_chars/max_chars は「読みやすさのための狙い所」、これは「超えたら投稿できない絶対上限」。
+  max_platform_chars: 280
   # スパムや誇大広告と誤認されやすい表現の例。Geminiへのプロンプトで
   # 明示的に避けるよう指示します。運用しながら追加してください。
   avoid_phrases:
